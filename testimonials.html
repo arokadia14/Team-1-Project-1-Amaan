@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Logos — Customer Testimonials</title>
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif; /* serif font */
+      background: #f7f9fb;
+      color: #222;
+      margin: 0;
+      padding: 18px;
+    }
+    header {
+      background: #fff;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    h1 { font-family: Arial, Helvetica, sans-serif; color: #003366; margin: 0; font-size: 24px; }
+    .lead { font-size: 16px; color: #555; margin-top: 6px; }
+    .container { max-width: 800px; margin: 18px auto; }
+    .card {
+      background: #fff;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .quote {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 18px;
+      color: #2a8f6a;
+      margin: 8px 0;
+    }
+    .meta { font-size: 13px; color: #666; }
+    a.button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #003366;
+      color: #003366;
+      background: #fff;
+      margin-right: 8px;
+    }
+    footer { text-align: center; color: #666; font-size: 13px; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Simple SVG picture -->
+    <svg width="80" height="60" aria-label="Logos logo" role="img">
+      <rect x="0" y="10" width="36" height="36" fill="#003366"></rect>
+      <rect x="44" y="10" width="36" height="36" fill="#2a8f6a"></rect>
+      <text x="40" y="36" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">LOGOS</text>
+    </svg>
+
+    <div>
+      <h1>Logos — Customer Testimonials</h1>
+      <div class="lead">Real stories from our authors and partners.</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <p>
+        This page includes <strong>bold</strong>, <u>underlined</u>, and <em>italic</em> text.
+      </p>
+
+      <h2 style="font-family: Arial, Helvetica, sans-serif; color:#003366;">Top success stories</h2>
+      <ol>
+        <li>Amelia Rivera — debut novel sold 52,000 copies.</li>
+        <li>Harrison Lee — textbook adopted by several colleges.</li>
+      </ol>
+
+      <h3 style="color:#2a8f6a;">Why authors choose Logos</h3>
+      <ul>
+        <li>Editing and design help</li>
+        <li>Simple marketing support</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="quote">"Logos helped me finish my manuscript and reach readers."</div>
+      <div><strong>— Amelia Rivera</strong></div>
+      <div class="meta">Result: 52,000 copies sold</div>
+
+      <div class="quote">"Quick communication and clear steps — very friendly."</div>
+      <div><strong>— Harrison Lee</strong></div>
+      <div class="meta">Result: Adopted by many instructors</div>
+    </section>
+
+    <section class="card">
+      <a class="button" href="info.txt" download>Download info file</a>
+      <a class="button" href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer">Reader reviews (Goodreads)</a>
+
+      <p style="margin-top:10px;">
+        Contact: <a href="mailto:testimonials@logosbooks.com">testimonials@logosbooks.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="lastModified">Date last modified: </div>
+    <div>&copy; Logos</div>
+  </footer>
+
+  <script>
+    (function(){
+      var lm = document.lastModified;
+      if (!lm) { lm = new Date().toLocaleString(); }
+      document.getElementById('lastModified').textContent = 'Date last modified: ' + lm;
+    })();
+  </script>
+</body>
+</html>
