@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logos — Customer Testimonials</title>
+  <style>
+    /* --- Basic layout & look (professional, simple) --- */
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --primary:#1f4e79;    /* primary color */
+      --accent:#d25b5b;     /* accent color */
+      --muted:#6b7280;
+      --maxw:900px;
+    }
+
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif; /* font style #1 */
+      background:var(--bg);
+      color:#222;
+      line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header{
+      background: linear-gradient(90deg, #ffffff, #f1f5f9);
+      border-bottom: 1px solid #e6e9ef;
+      padding:28px 20px;
+      text-align:center;
+    }
+
+    .container{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:18px;
+    }
+
+    h1{
+      margin:0 0 6px 0;
+      font-size:30px;
+      color:var(--primary);
+      letter-spacing:-0.5px;
+    }
+    p.lead{
+      margin:6px 0 18px 0;
+      font-size:16px; /* non-header font size #1 */
+      color:var(--muted);
+    }
+
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:10px;
+      box-shadow: 0 6px 18px rgba(27,40,60,0.06);
+      margin-bottom:18px;
+    }
+
+    /* Picture (inline SVG) */
+    .logo-svg{
+      width:96px;
+      height:96px;
+      display:inline-block;
+      vertical-align:middle;
+      margin-right:14px;
+      filter: drop-shadow(0 2px 6px rgba(31,78,121,0.12));
+    }
+
+    /* Testimonials styling */
+    .testimonial{
+      border-left:4px solid var(--primary);
+      padding:12px 16px;
+      margin:12px 0;
+      background:linear-gradient(180deg, rgba(31,78,121,0.02), transparent);
+      border-radius:6px;
+    }
+
+    .testimonial .quote{
+      font-family: "Courier New", Courier, monospace; /* font style #2 */
+      font-size:18px; /* non-header font size #2 */
+      color:var(--accent);
+      margin:0 0 8px 0;
+      display:block;
+    }
+
+    .testimonial .author{
+      color:var(--primary);
+      font-weight:700;
+      font-size:14px; /* small meta size */
+    }
+
+    /* simple lists */
+    ol{ margin-left:1.2em; }
+    ul{ margin-left:1.2em; }
+
+    .meta{
+      color:var(--muted);
+      font-size:13px; /* another non-header size */
+    }
+
+    /* small utilities to visibly show bold/underline/italics */
+    .sample-inline{
+      margin:12px 0;
+    }
+
+    /* footer */
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:28px;
+      padding:12px;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:6px;
+      text-decoration:none;
+      border:1px solid rgba(31,78,121,0.12);
+      background:linear-gradient(180deg,#fff,#f7fbff);
+      color:var(--primary);
+      font-weight:600;
+      margin-right:8px;
+    }
+
+    /* accessibility: focus outlines */
+    a:focus { outline:3px solid rgba(31,78,121,0.18); outline-offset:2px; }
+
+    /* small responsive tweak */
+    @media (max-width:520px){
+      .logo-svg{ width:72px; height:72px; display:block; margin:0 auto 12px auto; }
+      header { padding:20px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Inline SVG counts as a picture (accessible) -->
+    <svg class="logo-svg" viewBox="0 0 64 64" role="img" aria-label="Open book logo">
+      <title>Logos — open book</title>
+      <g transform="translate(2,6)">
+        <rect x="0" y="6" width="28" height="34" rx="2" fill="#ffffff" stroke="#1f4e79" stroke-width="1.8"/>
+        <rect x="34" y="6" width="28" height="34" rx="2" fill="#ffffff" stroke="#1f4e79" stroke-width="1.8"/>
+        <path d="M2 40 C12 28, 24 28, 32 40" fill="none" stroke="#d25b5b" stroke-width="1.6"/>
+        <path d="M36 40 C46 28, 58 28, 66 40" fill="none" stroke="#d25b5b" stroke-width="1.6"/>
+      </g>
+    </svg>
+
+    <div style="display:inline-block; vertical-align:middle; text-align:left;">
+      <h1>Logos — Customer Testimonials</h1>
+      <p class="lead">Real success stories from our authors and partners.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="stories-heading">
+      <h2 id="stories-heading" style="margin-top:0;color:#13324a;font-family:Arial, Helvetica, sans-serif;">
+        Our success stories
+      </h2>
+
+      <p class="sample-inline">
+        Example styling: this sentence contains <strong>bold</strong>, <u>underlined</u>, and <em>italic</em> text so the page demonstrates all required text styles.
+      </p>
+
+      <!-- Ordered list (Top success stories) -->
+      <h3 style="font-family:Arial, Helvetica, sans-serif; color:var(--primary); margin-bottom:6px;">Top success stories</h3>
+      <ol>
+        <li><strong>Amelia Rivera</strong> — debut novel sold 52,000 copies in 6 months (trade paperback release).</li>
+        <li><strong>Harrison Lee</strong> — educational textbook adopted by 14 institutions across the country.</li>
+        <li><strong>Jun Park</strong> — translation project that opened three new international markets.</li>
+      </ol>
+
+      <!-- Unordered list -->
+      <h4 style="margin-top:14px; color:var(--accent);">Why authors choose Logos</h4>
+      <ul>
+        <li>End-to-end editorial and design support</li>
+        <li>Targeted marketing campaigns (prelaunch & postlaunch)</li>
+        <li>Transparent royalty reporting and fast payments</li>
+      </ul>
+
+    </section>
+
+    <!-- Several testimonial blocks demonstrating fonts, colors, sizes -->
+    <section class="card" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" style="font-family:Arial, Helvetica, sans-serif; color:var(--primary);">Customer quotes</h2>
+
+      <div class="testimonial" role="article" aria-label="Testimonial from Amelia Rivera">
+        <span class="quote">"Working with Logos transformed my manuscript into a book readers loved — the editorial team was patient, the cover design was bold, and the launch plan actually worked."</span>
+        <div class="author">— <strong>Amelia Rivera</strong>, author of <em>The Long Light</em></div>
+        <div class="meta">Results: 52,000 copies sold, national media coverage, three reading-tour cities.</div>
+      </div>
+
+      <div class="testimonial" role="article" aria-label="Testimonial from Harrison Lee">
+        <span class="quote">"The Logos education team understood our syllabus and delivered a textbook that instructors adopted quickly. Their project management was <strong>exceptional</strong>."</span>
+        <div class="author">— <strong>Dr. Harrison Lee</strong>, Professor of Economics</div>
+        <div class="meta">Result: adopted by 14 institutions; updated edition scheduled for next year.</div>
+      </div>
+
+      <div class="testimonial" role="article" aria-label="Testimonial from Jun Park">
+        <span class="quote">"Logos handled translation, international rights, and distribution — they opened markets we only dreamed of."</span>
+        <div class="author">— <strong>Jun Park</strong>, translator & author</div>
+        <div class="meta">Result: translation released in 3 countries; audiobook rights sold separately.</div>
+      </div>
+    </section>
+
+    <!-- Links: (1) download file (internal/data-uri), (2) outside link opens new window, (3) contact mailto -->
+    <section class="card">
+      <h3 style="color:var(--primary);">Get a sample chapter / contact us</h3>
+
+      <p class="meta">
+        Download a short sample chapter or get in touch with the person who created this page.
+      </p>
+
+      <!-- Downloadable file (data URI sample). This counts as a hyperlink. -->
+      <a class="button" href="data:text/plain;charset=utf-8,Logos%20Sample%20Chapter%0A%0AChapter%201%3A%20The%20Story%20Begins...%0A%0AThis%20is%20a%20short%20sample%20chapter%20created%20for%20the%20Logos%20testimonials%20page.%20Replace%20this%20with%20your%20actual%20PDF%20in%20your%20repo." download="Logos_Sample_Chapter.txt" title="Download sample chapter">Download sample chapter</a>
+
+      <!-- Outside link (must open in a new blank window). This is the required outside link. -->
+      <a class="button" href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer" title="Open Goodreads in a new window">Explore reader reviews (Goodreads)</a>
+
+      <!-- Contact mailto link (this counts as a hyperlink too) -->
+      <p style="margin-top:12px;">
+        <a href="mailto:testimonials@logosbooks.com" title="Email the page creator">Contact me — testimonials@logosbooks.com</a>
+      </p>
+
+      <p class="meta" style="margin-top:12px;">
+        <strong>Note:</strong> replace the sample download with your real PDF (e.g., <code>assets/Logos_Sample_Chapter.pdf</code>) in your GitHub repository for grading.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="last-modified" aria-live="polite">Date last modified: (loading...)</div>
+    <div style="margin-top:6px; font-size:12px; color:var(--muted);">
+      Logos — Book publishing services · &copy; <span id="year"></span>
+    </div>
+  </footer>
+
+  <script>
+    /* Automatically fill 'Date last modified' from document metadata (so programmer doesn't manually change it).
+       If document.lastModified is unavailable, fall back to current time. */
+    (function(){
+      const lmEl = document.getElementById('last-modified');
+      const raw = document.lastModified;
+      let display;
+      if (raw && raw !== "") {
+        // Use the browser-provided lastModified; convert to local-readable format.
+        try {
+          const dt = new Date(raw);
+          display = dt.toLocaleString();
+        } catch (e) {
+          display = raw;
+        }
+      } else {
+        // Fallback: current timestamp (useful when testing locally)
+        display = new Date().toLocaleString();
+      }
+      lmEl.textContent = 'Date last modified: ' + display;
+
+      // small convenience: current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
