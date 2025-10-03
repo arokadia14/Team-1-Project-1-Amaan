@@ -7,7 +7,7 @@
 
   <style>
     body {
-      font-family: Georgia, "Times New Roman", serif; /* serif font */
+      font-family: Georgia, "Times New Roman", serif;
       background: #f7f9fb;
       color: #222;
       margin: 0;
@@ -16,20 +16,20 @@
     header {
       background: #fff;
       padding: 12px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ccc;
       display: flex;
       gap: 12px;
       align-items: center;
     }
-    h1 { font-family: Arial, Helvetica, sans-serif; color: #003366; margin: 0; font-size: 24px; }
-    .lead { font-size: 16px; color: #555; margin-top: 6px; }
+    h1 { font-family: Arial, sans-serif; color: #003366; margin: 0; font-size: 24px; }
+    .lead { font-size: 16px; color: #444; margin-top: 6px; }
     .container { max-width: 800px; margin: 18px auto; }
     .card {
       background: #fff;
       padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      margin-bottom: 14px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
     }
     .quote {
       font-family: "Courier New", Courier, monospace;
@@ -41,7 +41,7 @@
     a.button {
       text-decoration: none;
       display: inline-block;
-      padding: 8px 10px;
+      padding: 6px 10px;
       border-radius: 4px;
       border: 1px solid #003366;
       color: #003366;
@@ -54,7 +54,7 @@
 <body>
 
   <header>
-    <!-- Simple SVG picture -->
+    <!-- Simple SVG Logo -->
     <svg width="80" height="60" aria-label="Logos logo" role="img">
       <rect x="0" y="10" width="36" height="36" fill="#003366"></rect>
       <rect x="44" y="10" width="36" height="36" fill="#2a8f6a"></rect>
@@ -63,46 +63,51 @@
 
     <div>
       <h1>Logos — Customer Testimonials</h1>
-      <div class="lead">Real stories from our authors and partners.</div>
+      <div class="lead">Real feedback from writers who trusted us with their work.</div>
     </div>
   </header>
 
   <main class="container">
 
     <section class="card">
-      <p>
-        This page includes <strong>bold</strong>, <u>underlined</u>, and <em>italic</em> text.
-      </p>
-
-      <h2 style="font-family: Arial, Helvetica, sans-serif; color:#003366;">Top success stories</h2>
+      <h2 style="font-family: Verdana, sans-serif; color:#003366;">Top success stories</h2>
       <ol>
-        <li>Amelia Rivera — debut novel sold 52,000 copies.</li>
-        <li>Harrison Lee — textbook adopted by several colleges.</li>
+        <li><strong>Amaan Rokadia</strong> — debut novel sold <u>52,000 copies</u>.</li>
+        <li><strong>Harrison Lee</strong> — textbook adopted by <em>several colleges</em>.</li>
       </ol>
 
       <h3 style="color:#2a8f6a;">Why authors choose Logos</h3>
       <ul>
-        <li>Editing and design help</li>
-        <li>Simple marketing support</li>
+        <li>Personalized editing and design guidance</li>
+        <li>Helpful marketing tips without extra costs</li>
+        <li>Step-by-step support from idea to print</li>
       </ul>
     </section>
 
     <section class="card">
-      <div class="quote">"Logos helped me finish my manuscript and reach readers."</div>
+      <div class="quote">"Publishing felt overwhelming, but Logos walked me through each step. My book reached readers I never imagined."</div>
       <div><strong>— Amelia Rivera</strong></div>
-      <div class="meta">Result: 52,000 copies sold</div>
+      <div class="meta">Result: Over 50,000 copies sold</div>
 
-      <div class="quote">"Quick communication and clear steps — very friendly."</div>
+      <div class="quote">"The editors were patient and gave clear feedback. Professors at multiple universities now use my textbook."</div>
       <div><strong>— Harrison Lee</strong></div>
-      <div class="meta">Result: Adopted by many instructors</div>
+      <div class="meta">Result: Text adopted in classrooms nationwide</div>
+
+      <div class="quote">"As a first-time author, I needed reassurance. Logos gave me confidence and treated my story with respect."</div>
+      <div><strong>— Priya Nair</strong></div>
+      <div class="meta">Result: Positive reviews and steady sales</div>
     </section>
 
     <section class="card">
-      <a class="button" href="info.txt" download>Download info file</a>
-      <a class="button" href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer">Reader reviews (Goodreads)</a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Open_book_nae_02.svg/120px-Open_book_nae_02.svg.png" alt="Open book illustration">
 
       <p style="margin-top:10px;">
-        Contact: <a href="mailto:testimonials@logosbooks.com">testimonials@logosbooks.com</a>
+        <a class="button" href="info.txt" download>Download info file</a>
+        <a class="button" href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer">See reader reviews</a>
+      </p>
+
+      <p>
+        Contact me: <a href="mailto:testimonials@logosbooks.com">testimonials@logosbooks.com</a>
       </p>
     </section>
 
